@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{f04c9286-e219-4fb7-b306-f9717e9aba86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MODIFY and ADD files here">
+      <UniqueIdentifier>{20856119-44cc-42a4-b268-b2dac0a09714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Test">
+      <UniqueIdentifier>{75066020-d788-4b2b-bc41-ace12119e0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Unit Test Configuration %28Enable Tests here%29">
+      <UniqueIdentifier>{0608852d-4953-4faf-8d42-335bb335dce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Test\Do NOT modify">
+      <UniqueIdentifier>{e92ca29b-4937-4528-bd5c-8e9a35ac565c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Do NOT modify">
+      <UniqueIdentifier>{6df73c89-1eb3-4b10-a099-c16e2c2ff9b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\File\File.cpp">
+      <Filter>Source Files\MODIFY and ADD files here</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\1_Close_ERROR.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\2_Close_ERROR_Close.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\3_GetBaseDir_ERROR_PTR.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\4_GetBaseDir_ERROR_size.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\5_GetBaseDir_SUCCESS.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\6_IsHandleValid_ERROR.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\7_IsHandleValid_SUCCESS.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\8_Open_NO_Base.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\9_Open_NO_Base_Close.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\10_Open_NO_Base_ERROR_Filename.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\11_Open_NO_Base_ERROR_Open.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\12_Open_USE_Base.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\13_Open_USE_Base_COMBO.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\14_Open_USE_Base_ERROR.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\15_Open_USE_Base_ERROR_Filename.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\16_SetBaseDir_ERROR_Filename.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\17_SetBaseDir_ERROR_size.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\18_SetBaseDir_SUCCESS.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\19_Write_ERROR_Fail.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\20_Write_ERROR_FailBuffer.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\21_Write_ERROR_Read.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\22_Write_ERROR_ReadBuffer.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\23_Write_ERROR_ReadFlush.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\24_Write_ERROR_ReadSeek.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\25_Write_ERROR_ReadTell.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\26_Write_SUCCESS.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\27_Write_SUCCESS_Read.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\28_Write_SUCCESS_Read2.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\29_Write_SUCCESS_ReadFlush.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\30_Write_SUCCESS_ReadSEEK.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\31_Write_SUCCESS_ReadTell.cpp">
+      <Filter>_Test\Do NOT modify</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="..\Test\__DO NOT MODIFY__">
+      <Filter>_Test\Do NOT modify</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\File.h">
+      <Filter>Source Files\MODIFY and ADD files here</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\_UnitTestConfiguration.h">
+      <Filter>Source Files\Unit Test Configuration %28Enable Tests here%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

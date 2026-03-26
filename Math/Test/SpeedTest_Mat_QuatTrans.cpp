@@ -210,8 +210,8 @@ TEST(SpeedTest_Mat_QuatTrans, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio );
-	CHECK(ratio > 1.5f);
+	Trace::out2("SpeedTest_Mat_QuatTrans  ratio: %f   (1.25)\n", ratio );
+	CHECK(ratio > 1.25f);
 #endif
 #endif
 

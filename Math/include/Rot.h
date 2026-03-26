@@ -61,16 +61,8 @@ namespace Azul
 		MATH_LIBRARY_API Rot &operator *= (const Trans &A) = delete;
 
 	private:
-		void privSetRotOrient(const Vec3 &vect_dof, const Vec3 &vect_vup);
-		void privSetRotInvOrient(const Vec3 &vect_dof, const Vec3 &vect_vup);
-
-		void privSetRotXYZ(const float aX, const float bY, const float cZ);
-		void privSetRotXZY(const float aX, const float bY, const float cZ);
-		void privSetRotYXZ(const float aX, const float bY, const float cZ);
-		void privSetRotYZX(const float aX, const float bY, const float cZ);
-		void privSetRotZXY(const float aX, const float bY, const float cZ);
-		void privSetRotZYX(const float aX, const float bY, const float cZ);
-
+		void privSetRotOrient(const Vec3& dof, const Vec3& up);
+		void privSetRotInvOrient(const Vec3& dof, const Vec3& up);
 	};
 }
 

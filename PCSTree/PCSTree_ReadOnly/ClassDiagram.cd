@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Azul::PCSTreeIterator">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~PCSTreeIterator" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PCSTreeIterator" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAACAAAAAACQAAAACAAAAACAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSTreeIterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul::PCSTreeForwardIterator">
+    <Position X="7.25" Y="2.75" Width="2" />
+    <Members>
+      <Method Name="~PCSTreeForwardIterator" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PCSTreeForwardIterator" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAACAAAAAAAQAAAACgBAAAgAAAAAAAAAAgAAAgAAA=</HashCode>
+      <FileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSTreeForwardIterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul::PCSTreeReverseIterator">
+    <Position X="9.5" Y="2.75" Width="2" />
+    <Members>
+      <Method Name="~PCSTreeReverseIterator" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PCSTreeReverseIterator" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AiAAACAAAAAAAQAAAACgAgAAkAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSTreeReverseIterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul::PCSNode">
+    <Position X="3.75" Y="2" Width="2.5" />
+    <Members>
+      <Field Name="MAJOR_VERSION" Hidden="true" />
+      <Field Name="MINOR_VERSION" Hidden="true" />
+      <Field Name="NAME_SIZE" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Azul::PCSNode::Code">
+        <TypeIdentifier>
+          <NewMemberFileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSNode.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAAQAhEAIAAAgAAIwKAgABgCgGAAIAMAkQEQCjAA=</HashCode>
+      <FileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Azul::PCSTree">
+    <Position X="0.75" Y="1.5" Width="2" />
+    <Members>
+      <Method Name="~PCSTree" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PCSTree" Hidden="true" />
+      <Method Name="privDepthFirst" Hidden="true" />
+      <Method Name="privDumpTreeDepthFirst" Hidden="true" />
+      <Method Name="privInfoAddNewLevel" Hidden="true" />
+      <Method Name="privInfoAddNode" Hidden="true" />
+      <Method Name="privInfoRemoveNewLevel" Hidden="true" />
+      <Method Name="privInfoRemoveNode" Hidden="true" />
+      <Method Name="privRecalculateLevel" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Azul::PCSTree::Info">
+        <TypeIdentifier>
+          <NewMemberFileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSTree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AMBAAMABAAAAAAAAAAIABAhAAAAAAEAAAIAgoAAEAAA=</HashCode>
+      <FileName>D:\code\keenan2025spring_gam475\instructor\Assignment\PA5_dev\PA5 - Answers\PCSTree\PCSTree.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pRoot" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

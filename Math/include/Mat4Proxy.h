@@ -6,35 +6,37 @@
 #define ENGINE_MATH_MAT4_PROXY_H
 
 #include "Math_DLLInterface.h"
+#include "Mat4Hint.h"
 
 namespace Azul
 {
 	// Matrix related proxies here:
 	struct Mat4Proxy
 	{
-		MATH_LIBRARY_API inline Mat4Proxy(Mat4 &rMat, float &_x)
+		inline Mat4Proxy(Mat4& rMat, float& _x)
 			: ref(rMat), x(_x)
 		{
 		}
 
-		MATH_LIBRARY_API inline Mat4Proxy operator = (float v)
+		inline Mat4Proxy operator = (float v)
 		{
 			x = v;
 
-			// no knowledge on how changing this variable affects the matrix
-			// so make it general hint
-			ref._u_m15 &= (unsigned int) (0xFFFFFFF8);
+			// No knowledge on how changing this element affects the matrix
+			// Generalize the matrix hint without altering the stored value
+
+			((Mat4Hint&)ref).privSetGeneralHint();
 
 			return *this;
 		}
 
-		MATH_LIBRARY_API inline operator float()
+		inline operator float()
 		{
 			return this->x;
 		}
 
-		Mat4 &ref;
-		float &x;
+		Mat4& ref;
+		float& x;
 	};
 
 }

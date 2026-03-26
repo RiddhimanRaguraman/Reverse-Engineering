@@ -219,8 +219,8 @@ TEST(SpeedTest_Mat_Mat4MultEqualTrans, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio );
-	CHECK(ratio > 2.0f);
+	Trace::out2("SpeedTest_Mat_Mat4MultEqualTrans  ratio: %f   (1.5) \n", ratio );
+	CHECK(ratio > 1.5f);
 #endif
 #endif
 

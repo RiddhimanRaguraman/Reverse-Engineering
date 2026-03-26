@@ -210,7 +210,7 @@ TEST(SpeedTest_Mat_TransTrans, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio );
+	Trace::out2("SpeedTest_Mat_TransTrans  ratio: %f   (1.5)\n", ratio );
 	CHECK(ratio > 1.5f);
 #endif
 #endif

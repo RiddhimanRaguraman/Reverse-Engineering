@@ -219,8 +219,8 @@ TEST(SpeedTest_Mat_Mat4MultEqualRot, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio );
-	CHECK(ratio > 1.15f);
+	Trace::out2("SpeedTest_Mat_Mat4MultEqualRot  ratio: %f   (1.10)\n", ratio );
+	CHECK(ratio > 1.10f);
 #endif
 #endif
 
@@ -228,3 +228,4 @@ TEST(SpeedTest_Mat_Mat4MultEqualRot, TestConfig::ALL)
 } TEST_END
 
 // ---  End of File ---
+

@@ -6,7 +6,6 @@ REM
 
 REM cleanup root director
 
-    if exist ..\Azul rmdir /S /Q ..\Azul
     if exist *.user del /F /s *.user
     if exist Azul rmdir /S /Q Azul
     if exist Logs rmdir /S /Q Logs
@@ -15,15 +14,11 @@ REM cleanup root director
     if exist x64 rmdir /S /Q x64
     if exist ipch rmdir /S /Q ipch
     if exist .vs rmdir /S /Q .vs
-    if exist Temp12 rmdir /S /Q Temp12
-    if exist Temp13 rmdir /S /Q Temp13
 
     if exist *.suo del /F /S /A:H *.suo
     if exist *.sdf del /F /S *.sdf
     if exist *.suo del /F /S *.suo
     if exist *.db del /F *.db
-    if exist *.bin del /F *.bin
-
   
 REM walk through subdirectories delete Release & Debug subs
 

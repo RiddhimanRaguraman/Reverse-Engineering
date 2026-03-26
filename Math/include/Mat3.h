@@ -130,9 +130,7 @@ namespace Azul
 		MATH_LIBRARY_API void Print(const char *pName) const;
 
 	private:
-		Mat3 privGetAdj(void) const;
-
-	private:
+		Mat3 privGetAdj() const;
 
 		friend Mat4;
 		friend Vec3;

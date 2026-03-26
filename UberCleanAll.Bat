@@ -24,12 +24,6 @@ REM cleanup root directory
     if exist x64 rmdir /S /Q x64
     if exist ipch rmdir /S /Q ipch
     if exist .vs rmdir /S /Q .vs
-    del /F /q .\Data\*.azul
-    del /F /q .\Data\*.json
-    del /F /q .\Data\*.xml
-    del /F /q .\Libs\ProtoBuf\src\*.pb.*
-
-    if exist shaders\compiled rmdir /S /Q shaders\compiled
 
     if exist *.suo del /F /S /A:H *.suo
     if exist *.sdf del /F /S *.sdf
@@ -38,22 +32,7 @@ REM cleanup root directory
 
 REM call each projects cleanme
 
-cd Engine
-call "CleanMe.Bat"
-cd ..
-
-cd Converter
-call "CleanMe.Bat"
-cd ..
-
-
-cd Libs
-
 cd Math
-call "CleanMe.Bat"
-cd ..
-
-cd AnimTime
 call "CleanMe.Bat"
 cd ..
 
@@ -65,26 +44,8 @@ cd PCSTree
 call "CleanMe.Bat"
 cd ..
 
-cd Manager
-call "CleanMe.Bat"
-cd ..
 
-cd ProtoBuf
-call "CleanMe.Bat"
-cd ..
 
-cd PugiXml
-call "CleanMe.Bat"
-cd ..
-
-REM back to Solution Dir
-cd ..
-          
-cd Shared\ProtoBuf_Items
-if exist *.pb.* del /F *.pb.*
-
-REM back to Solution Dir
-cd .\..\..
 
 
 

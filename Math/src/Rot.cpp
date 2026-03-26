@@ -267,9 +267,6 @@ namespace Azul
         case Rot3::ZYX:
             *this = Rz * Ry * Rx;
             break;
-        case Rot3::Uninitialized:
-            // no rotataion on the gameobject
-            break;
         }
          
         ((Mat4Hint&)*this).privSetRotHint();
@@ -468,9 +465,6 @@ namespace Azul
             break;
         case Rot3::ZYX:
             *this = Rz * Ry * Rx;
-            break;
-        case Rot3::Uninitialized:
-            // no rotataion on the gameobject
             break;
         }
         ((Mat4Hint&)*this).privSetRotHint();

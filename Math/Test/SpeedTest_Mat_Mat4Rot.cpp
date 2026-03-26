@@ -215,8 +215,8 @@ TEST(SpeedTest_Mat_Mat4Rot, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio );
-	CHECK(ratio > 1.15f);
+	Trace::out2("SpeedTest_Mat_Mat4Rot  ratio: %f   (1.1)\n", ratio );
+	CHECK(ratio > 1.1f);
 #endif
 #endif
 

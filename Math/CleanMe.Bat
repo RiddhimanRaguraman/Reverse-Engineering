@@ -1,10 +1,19 @@
 REM
 REM Keenan's Hack to remove intermediate files
-REM If you find a way to enhance, please return updates to
-REM ekeenan2@cdm.depaul.edu
+REM Designed to work for C++ or C# visual studio projects
+REM
+REM If you find a way to enhance, 
+REM please return updates to ekeenan2@cdm.depaul.edu
 REM
 
-REM cleanup root director
+REM Set the current directory as AZUL_PATH environmental var
+for %%I in (.) do set CurrDirName=%%~fI
+echo %CurrDirName%
+
+SETX AZUL_PATH "%CurrDirName%"
+
+
+REM cleanup root directory
 
     if exist ..\Azul rmdir /S /Q ..\Azul
     if exist *.user del /F /s *.user
@@ -16,10 +25,7 @@ REM cleanup root director
     if exist ipch rmdir /S /Q ipch
     if exist .vs rmdir /S /Q .vs
 
-
-
     if exist shaders\compiled rmdir /S /Q shaders\compiled
-
 
     if exist *.suo del /F /S /A:H *.suo
     if exist *.sdf del /F /S *.sdf

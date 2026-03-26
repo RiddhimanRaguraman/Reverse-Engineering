@@ -138,9 +138,6 @@ namespace Azul
         case Rot3::ZYX:
             *this = (qz * qy) * qx;
             break;
-		case Rot3::Uninitialized:
-			// no rotataion on the gameobject
-			break;
         }
     }
 
@@ -308,9 +305,6 @@ namespace Azul
         case Rot3::ZYX:
             *this = (qz * qy) * qx;
             break;
-		case Rot3::Uninitialized:
-			// no rotataion on the gameobject
-			break;
         }
     }
 

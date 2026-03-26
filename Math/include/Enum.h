@@ -145,8 +145,7 @@ namespace Azul
 		YXZ,
 		YZX,
 		ZXY,
-		ZYX,
-		Uninitialized
+		ZYX
 		// future combos... here
 	};
 

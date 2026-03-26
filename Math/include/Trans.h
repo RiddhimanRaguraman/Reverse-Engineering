@@ -37,7 +37,6 @@ namespace Azul
 		MATH_LIBRARY_API void set(const Vec3 &vTrans);
 		MATH_LIBRARY_API void set(const enum Identity_enum);
 
-
 		// Multiply with hints
 		MATH_LIBRARY_API Mat4 operator * (const Mat4 &A) const;
 		MATH_LIBRARY_API Trans &operator *= (const Mat4 &A) = delete;

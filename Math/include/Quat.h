@@ -117,7 +117,7 @@ namespace Azul
 		MATH_LIBRARY_API Quat &inv(void);
 
 		// Return inverse Quat
-		MATH_LIBRARY_API Quat getInv(void) const;
+		MATH_LIBRARY_API Quat getInv(void) const; 
 
 		// Normalize
 
@@ -134,7 +134,7 @@ namespace Azul
 		MATH_LIBRARY_API void Lqvqc(const Vec3 &vIn, Vec3 &vOut) const;
 
 		// Linear Operator  vOut = Quat(conjugate) * Vector * Quat
-		// vOut = Quat.conj() * vIn * Quat		
+		// vOut = Quat.conj() * vIn * Quat	 	 
 		MATH_LIBRARY_API void Lqcvq(const Vec3 &vIn, Vec3 &vOut) const;
 
 		// Test functions
@@ -200,20 +200,7 @@ namespace Azul
 		MATH_LIBRARY_API friend Quat operator/(const float a, const Quat &q);
 
 		// For printing
-		MATH_LIBRARY_API void Print(const char *pName) const;
-
-	private:
-		void privSetRotX(const float a);
-		void privSetRotY(const float a);
-		void privSetRotZ(const float a);
-		void privSetRotXYZ(const float aX, const float bY, const float cZ);
-		void privSetRotXZY(const float aX, const float bY, const float cZ);
-		void privSetRotYXZ(const float aX, const float bY, const float cZ);
-		void privSetRotYZX(const float aX, const float bY, const float cZ);
-		void privSetRotZXY(const float aX, const float bY, const float cZ);
-		void privSetRotZYX(const float aX, const float bY, const float cZ);
-										
-		void privSetRotAxisAngle(const Vec3 &axis, const float angle);
+		//MATH_LIBRARY_API void Print(const char *pName) const;
 
 	private:
 		friend Vec4;

@@ -179,7 +179,7 @@ TEST(SpeedTestDet_TransScale, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio);
+	Trace::out2("SpeedTestDet_TransScale  ratio: %f   (1.5)\n", ratio);
 	CHECK(ratio > 1.5f);
 #endif
 #endif

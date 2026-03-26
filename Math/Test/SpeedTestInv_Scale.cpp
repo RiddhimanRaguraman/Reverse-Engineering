@@ -146,7 +146,7 @@ TEST(SpeedTestInv_Scale, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f\n", ratio);
+	Trace::out2("SpeedTestInv_Scale  ratio: %f   (2.0)\n", ratio);
 	CHECK(ratio > 2.0f);
 #endif
 #endif

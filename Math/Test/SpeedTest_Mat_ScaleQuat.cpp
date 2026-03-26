@@ -210,7 +210,7 @@ TEST(SpeedTest_Mat_ScaleQuat, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio);
+	Trace::out2("SpeedTest_Mat_ScaleQuat  ratio: %f   (1.25)\n", ratio);
 	CHECK(ratio > 1.25f);
 #endif
 #endif

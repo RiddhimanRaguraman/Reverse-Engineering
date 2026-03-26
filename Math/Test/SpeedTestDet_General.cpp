@@ -182,7 +182,7 @@ TEST(SpeedTestDet_General, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio);
+	Trace::out2("SpeedTestDet_General  ratio: %f  (~1.0) \n", ratio);
 #endif
 #endif
 

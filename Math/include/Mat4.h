@@ -6,7 +6,6 @@
 #define ENGINE_MATH_MATRIX_4x4_H
 
 #include "Math_DLLInterface.h"
-
 #include "Vec4.h"
 #include "Vec3.h"
 
@@ -155,7 +154,6 @@ namespace Azul
 		MATH_LIBRARY_API Mat4 operator * (const Mat4 &A) const;
 		MATH_LIBRARY_API Mat4 &operator *= (const Mat4 &A);
 
-
 		// Simple casting to Mat4 operations... just a wrapper - with hints
 		MATH_LIBRARY_API Mat4 operator * (const Scale &A) const;
 		MATH_LIBRARY_API Mat4 &operator *= (const Scale &A);
@@ -172,10 +170,19 @@ namespace Azul
 		// For printing
 		MATH_LIBRARY_API void Print(const char *pName) const;
 
+		enum class Hint : uint32_t
+		{
+			Generalize = 0x0,        // generalize 4x4 inverse  (no flags)
+			Rot = 0x1,               // matrix inverse is M.T()
+			Trans = 0x2,             // matrix inverse is M(-trans)
+			RotTrans = 0x3,          // rot and trans  A_inv is A.T() 
+			Scale = 0x4,             // matrix invers is M(1/scale)
+			RotScale = 0x5,          // Rot and Scale no translate
+			TransScale = 0x6,        // Trans and Scale no Translate
+			Affine = 0x7             // generalize Affine
+		};
 
-	private:
-		Mat4 privGetAdj(void) const;
-
+		
 	protected:
 
 		friend Mat3;

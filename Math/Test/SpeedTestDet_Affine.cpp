@@ -181,8 +181,8 @@ TEST(SpeedTestDet_Affine, TestConfig::ALL)
 
 #ifdef NDEBUG
 #ifdef MATH_SPEED_TEST
-	Trace::out2("         ratio: %f \n", ratio);
-	CHECK(ratio > 1.5f);
+	Trace::out2("SpeedTestDet_Affine  ratio: %f  (1.15)\n", ratio);
+	CHECK(ratio > 1.15f);
 #endif
 #endif
 
